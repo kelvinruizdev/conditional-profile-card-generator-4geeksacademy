@@ -44,12 +44,14 @@ function render(variables = {}) {
               variables.twitter == null ? "4geeksacademy" : variables.twitter
             }"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${
-              variables.github ? "4geeksacademy" : variables.github
+              variables.github == null || variables.github == "alesanchezr"
+                ? "4geeksacademy"
+                : variables.github
             }"><i class="fab fa-github"></i></a></li>
             <li><a href="https://linkedin.com/${
               variables.linkedin == null
                 ? "school/4geeks-academy-vzla"
-                : variables.linkedin
+                : "in/" + variables.linkedin
             }"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://instagram.com/${
               variables.instagram == null
